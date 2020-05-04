@@ -53,6 +53,18 @@ class Second_VC: UIViewController {
     }
     
     
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "notify"), object: nil)
+    }
+    
+    
     //.....................This is good example for closure memorymangement.
     @objc func showalert() {
         let alertvc = UIAlertController.init(title: "Info", message: "it is processing", preferredStyle: .alert)

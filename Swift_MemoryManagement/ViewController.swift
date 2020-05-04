@@ -28,7 +28,7 @@ class ViewController: UIViewController,Second_VCDelegate {
         // Do any additional setup after loading the view.
         
         //........................... Notifications Memory Leaks
-   //     NotificationCenter.default.post(name: Notification.Name("notify"), object: nil)
+       NotificationCenter.default.post(name: Notification.Name("notify"), object: nil)
 
 //        var first:Myclass? = Myclass()
 //          var second  = first
